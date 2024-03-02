@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.paint.Color?>
+<VBox alignment="CENTER_LEFT" focusTraversable="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="327.0" prefWidth="304.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab4map.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <ListView fx:id="lstMessage" />
+    <HBox spacing="30.0">
+        <Button fx:id="addTort" mnemonicParsing="false" onAction="#adaugaTort" text="Adaugati tort" textFill="#dc28be" />
+        <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" text="Adaugati comanda" textAlignment="RIGHT" textFill="#1f0cf2" />
+    </HBox>
+    <HBox>
+        <Label text="ID TORT: "/>
+        <TextField fx:id="id_tort"/>
+        <Label text="TIP TORT: "/>
+        <TextField fx:id="tip_tort"/>
+    </HBox>
+    <HBox spacing="30.0">
+        <Button mnemonicParsing="false" fx:id="deleteTort" text="Stergeti tort" onAction="#stergeTort" textFill="#ec09c6" />
+        <Button mnemonicParsing="false" text="Stergeti comanda" textFill="#3505f7" />
+    </HBox>
+    <HBox>
+        <Label text="ID TORT DE STERS"/>
+        <TextField fx:id="id_tort_sters"/>
+    </HBox>
+    <HBox spacing="30.0">
+        <Button mnemonicParsing="false" fx:id="updtTort" text="Actualizati tort" onAction="#updateTort" textFill="#f707f3" />
+        <Button mnemonicParsing="false" text="Actualizati comanda" textFill="#2e03ec" />
+    </HBox>
+    <HBox>
+        <Label text = "ID TORT DE MODIFICAT"/>
+        <TextField fx:id="id_tort_modif"/>
+        <Label text="NOUL TIP"/>
+        <TextField fx:id="tip_modif"/>
+    </HBox>
+    <HBox spacing="30.0">
+        <Button fx:id="afiseazaTorturi" mnemonicParsing="false" onAction="#getAllTorturi" text="Afisare tort" textFill="#f404d4" />
+        <Button fx:id="afiseazaComenzi" mnemonicParsing="false" onAction="#getAllComenzi" text="Afisare comanda" textFill="#4807ed" />
+    </HBox>
+    <HBox>
+
+    </HBox>
+    <AmbientLight lightOn="true">
+        <color>
+            <Color green="0.9612069129943848" blue="1.0" />
+        </color>
+    </AmbientLight>
+</VBox>
+
